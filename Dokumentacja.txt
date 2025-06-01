@@ -1,0 +1,118 @@
+CarGarage
+
+
+Opis aplikacji
+
+CarGarage to aplikacja mobilna na Androida, umożliwiająca użytkownikom:
+
+Dodawanie i przeglądanie własnych samochodów,
+
+Dodawanie i edytowanie przeglądów technicznych,
+
+Dodawanie napraw samochodów,
+
+Przeglądanie historii przeglądów i napraw danego pojazdu,
+
+Przypomnienia o nadchodzących przeglądach,
+
+Atrakcyjny i nowoczesny interfejs oparty o RecyclerView i Material Design.
+
+Technologie
+
+Android SDK (Java) – główny język i framework aplikacji,
+
+Room – lokalna baza danych (SQLite ORM),
+
+LiveData / ViewModel – zarządzanie stanem danych i ich obserwacją,
+
+RecyclerView – prezentacja list przeglądów i napraw,
+
+Material Components – nowoczesny design UI.
+
+
+Struktura bazy danych (Room / SQLite)
+
+
+Tabela: cars
+java
+Kopiuj
+Edytuj
+@Entity(tableName = "cars")
+public class Car {
+  @PrimaryKey(autoGenerate = true)
+  public int id;
+  public String make;
+  public String model;
+  public String registrationNumber;
+  public int year;
+}
+Tabela: inspections
+java
+Kopiuj
+Edytuj
+@Entity(tableName = "inspections")
+public class Inspection {
+  @PrimaryKey(autoGenerate = true)
+  public int id;
+  public int carId;
+  public String date;
+  public String notes;
+}
+Tabela: repairs
+java
+Kopiuj
+Edytuj
+@Entity(tableName = "repairs")
+public class Repair {
+  @PrimaryKey(autoGenerate = true)
+  public int id;
+  public int carId;
+  public String title;
+  public String description;
+  public String date;
+}
+
+
+Testowanie
+
+Przetestowano dodawanie i edytowanie przeglądów,
+
+Zweryfikowano zapisywanie i poprawne wyświetlanie napraw,
+
+Sprawdzono działanie powiązania samochód → przeglądy / naprawy,
+
+Obsługa błędów NullPointer, brakujących danych i nieprawidłowego formatu,
+
+Responsywność UI na różnych rozmiarach ekranów.
+
+
+Dodatkowe
+
+
+Projekt wersjonowany w Git (GitHub),
+
+Projekt przygotowany do dalszej rozbudowy (zdjęcia, itp.),
+
+Dbałość o UI/UX i komponenty Material Design,
+
+Aplikacja przygotowana zgodnie z wymaganiami projektu zaliczeniowego.
+
+Instalacja
+
+Wymagania:
+
+Android Studio (min. Arctic Fox),
+
+Emulator lub fizyczne urządzenie z Androidem (min SDK 24).
+
+Kroki:
+
+Sklonuj repozytorium:
+git clone https://github.com/S0beEk/Car_Garage_App.git
+git clone https://github.com/janratajczyk/Car_Garage_App.git
+
+Otwórz projekt w Android Studio,
+
+Zbuduj projekt (Build > Make Project),
+
+Uruchom na emulatorze lub telefonie.

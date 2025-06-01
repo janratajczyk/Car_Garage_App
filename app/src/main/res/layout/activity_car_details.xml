@@ -1,0 +1,97 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/textBrand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textModel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textYear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textRegistration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textRepairsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="monospace"
+        android:text="Naprawy"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerRepairs"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/buttonAddRepair"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:backgroundTint="#FFC107"
+        android:text="Dodaj naprawę"
+        android:textColor="#3F51B5" />
+
+    <TextView
+        android:id="@+id/textInspectionsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="monospace"
+        android:text="Przeglądy"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerInspections"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/buttonAddInspection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:backgroundTint="#FFC107"
+        android:text="Dodaj przegląd"
+        android:textColor="#3F51B5" />
+
+    <Button
+        android:id="@+id/buttonFuelHistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Historia tankowań"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp" />
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/etDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Data (np. 2025-06-01)"
+            android:inputType="date" />
+
+        <EditText
+            android:id="@+id/etLiters"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Liczba litrów"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/etCost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Koszt tankowania"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/etMileage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Przebieg (km)"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/btnSaveFuel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Zapisz tankowanie" />
+
+    </LinearLayout>
+</ScrollView>
