@@ -1,5 +1,9 @@
 CarGarage
 
+Wykonawcy
+Jan Ratajczyk
+Kacper Sobecki
+Kacper Woszczek
 
 Opis aplikacji
 
