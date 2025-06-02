@@ -53,9 +53,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:backgroundTint="#FFC107"
+        android:backgroundTint="#A4CCD9"
         android:text="Dodaj naprawę"
-        android:textColor="#3F51B5" />
+        android:textColor="#EBFFD8" />
 
     <TextView
         android:id="@+id/textInspectionsTitle"
@@ -77,9 +77,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="12dp"
-        android:backgroundTint="#FFC107"
+        android:backgroundTint="#A4CCD9"
         android:text="Dodaj przegląd"
-        android:textColor="#3F51B5" />
+        android:textColor="#EBFFD8" />
 
     <Button
         android:id="@+id/buttonFuelHistory"
