@@ -8,11 +8,11 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#9D9898"
+        android:background="#8DBCC7"
         android:fontFamily="sans-serif-condensed-medium"
         android:text="Car Garage"
         android:textAlignment="center"
-        android:textColor="#3F51B5"
+        android:textColor="#EBFFD8"
         android:textSize="34sp"
         android:textStyle="bold|italic" />
 
@@ -47,10 +47,10 @@
         android:id="@+id/btnDelete"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="#F60303"
+        android:backgroundTint="#A4CCD9"
         android:contentDescription="Usuń samochód"
         android:fontFamily="sans-serif-condensed"
         android:text="Usuń Pojazd"
-        android:textColor="#0D0C0C" />
+        android:textColor="#EBFFD8" />
 
 </LinearLayout>
